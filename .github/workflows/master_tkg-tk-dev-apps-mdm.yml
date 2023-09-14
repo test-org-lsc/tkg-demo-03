@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'tkg-tk-dev-apps-mdm'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8BCF9785118B4EB8867531F02F6DB5FE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0954631B57C0406BA0EBE3B4678985CA }}
           package: '*.jar'
