@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: [self-hosted, Windows, x64]
 
     steps:
       - uses: actions/checkout@v2
