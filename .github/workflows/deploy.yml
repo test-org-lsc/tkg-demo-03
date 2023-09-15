@@ -1,29 +1,29 @@
-name: Java App CI/CD
+# name: Java App CI/CD
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
-jobs:
-  build-and-deploy:
-    runs-on: windows-latest
+# jobs:
+#   build-and-deploy:
+#     runs-on: windows-latest
     
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
       
-    - name: Set up Java
-      uses: actions/setup-java@v2
-      with:
-        java-version: '17'  # 필요한 Java 버전으로 변경하세요.
+#     - name: Set up Java
+#       uses: actions/setup-java@v2
+#       with:
+#         java-version: '17'  # 필요한 Java 버전으로 변경하세요.
 
-    - name: Build with Maven
-      run: mvn clean install  # Maven 빌드 명령어를 적절하게 변경하세요.
+#     - name: Build with Maven
+#       run: mvn clean install  # Maven 빌드 명령어를 적절하게 변경하세요.
 
-    - name: Publish to Azure App Service
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: ${{ secrets.AZURE_APP_NAME }}
-        slot-name: ${{ secrets.AZURE_SLOT_NAME }}  # 슬롯을 사용하려면 설정하세요.
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+#     - name: Publish to Azure App Service
+#       uses: azure/webapps-deploy@v2
+#       with:
+#         app-name: ${{ secrets.AZURE_APP_NAME }}
+#         slot-name: ${{ secrets.AZURE_SLOT_NAME }}  # 슬롯을 사용하려면 설정하세요.
+#         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
