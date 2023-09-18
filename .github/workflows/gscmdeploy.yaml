@@ -49,7 +49,7 @@ jobs:
         with:
           app-name: 'tkg-tk-dev-apps-gscm'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8BCF9785118B4EB8867531F02F6DB5FE }}
+          publish-profile: ${{ secrets.GSCM }}
           package: 'demo-0.0.1-SNAPSHOT.jar'
       # - name: Deploy to Azure Web App
       #   uses: azure/webapps-deploy@v2
