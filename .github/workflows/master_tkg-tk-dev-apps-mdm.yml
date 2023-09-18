@@ -50,7 +50,7 @@ jobs:
           app-name: 'tkg-tk-dev-apps-mdm'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0954631B57C0406BA0EBE3B4678985CA }}
-          package: '*.jar'
+          package: 'demo-0.0.1-SNAPSHOT.jar'
       # - name: Deploy to Azure Web App
       #   uses: azure/webapps-deploy@v2
       #   with:
