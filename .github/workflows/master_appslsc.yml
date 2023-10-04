@@ -55,4 +55,4 @@ jobs:
           app-name: 'appslsc'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A640AB6CFCBC4D8D81298067DE404A7E }}
-          package: '*.jar'
+          package: 'demo-0.0.1-SNAPSHOT.jar'
