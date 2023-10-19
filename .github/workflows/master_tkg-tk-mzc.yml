@@ -50,4 +50,4 @@ jobs:
           app-name: 'tkg-tk-mzc'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B19E3A986D504FBE9D48775FB1AB6D0C }}
-          package: '*.jar'
+          package: 'demo-0.0.1-SNAPSHOT.jar'
