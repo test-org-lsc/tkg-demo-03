@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - tkg-tk-mzc
+name: Build and deploy JAR app to Azure Web App - appslsc
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'tkg-tk-mzc'
+          app-name: 'appslsc'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B19E3A986D504FBE9D48775FB1AB6D0C }}
+          publish-profile: ${{ secrets.APPSLSC }}
           package: 'demo-0.0.1-SNAPSHOT.jar'
