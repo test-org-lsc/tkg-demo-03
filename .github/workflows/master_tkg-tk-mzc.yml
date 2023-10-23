@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'appslsc01'
+          app-name: 'applsc01'
           slot-name: 'Production'
           publish-profile: ${{ secrets.APPSLSC01 }}
           package: 'demo-0.0.1-SNAPSHOT.jar'
